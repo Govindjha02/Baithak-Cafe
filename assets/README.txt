@@ -1,0 +1,1 @@
+Images are intentionally loaded from Unsplash URLs in the HTML so the static project stays lightweight. For a final submission, you can replace them with your own licensed/local images if required.

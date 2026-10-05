@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <title>Home | The Brew Haven</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Brew Haven — a cozy Jaipur café serving freshly brewed coffee, delicious food and good moments.">
+<meta name="theme-color" content="#151515">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+tailwind.config = {
+  darkMode: 'media',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+        display: ['Playfair Display', 'Georgia', 'serif']
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body class="min-w-0 bg-stone-50 font-sans text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-lg focus:bg-amber-300 focus:px-4 focus:py-2 focus:text-stone-950">Skip to content</a>
+  <header class="sticky top-0 z-50 border-b border-stone-800/80 bg-stone-950/95 backdrop-blur">
+  <nav aria-label="Main navigation" class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+    <a href="index.html" class="flex items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="The Brew Haven home">
+      <span class="grid h-10 w-10 place-items-center rounded-full border border-amber-400/60 text-xl text-amber-300" aria-hidden="true">☕</span>
+      <span>
+        <span class="block font-display text-base font-bold text-white">Baithak Café</span>
+        <span class="hidden text-[10px] text-stone-400 sm:block">Café · Coffee · Good Vibes</span>
+      </span>
+    </a>
+    <div class="hidden items-center gap-7 text-sm font-medium md:flex">
+      <a href="index.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
+      <a href="about.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
+      <a href="menu.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
+      <a href="gallery.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
+      <a href="contact.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+    </div>
+    <a href="contact.html#booking" class="rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950 shadow-lg shadow-amber-950/20 transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-stone-950">Book a Table</a>
+  </nav>
+  <div class="border-t border-stone-800 md:hidden">
+    <div class="mx-auto grid max-w-7xl grid-cols-5 px-2">
+      <a href="index.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
+      <a href="about.html" class="py-3 text-center text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
+      <a href="menu.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
+      <a href="gallery.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
+      <a href="contact.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+    </div>
+  </div>
+</header>
+  <main id="main-content">
+<section class="relative isolate overflow-hidden bg-stone-950">
+  <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1800&q=85" alt="Warmly lit café interior with coffee and tables" class="absolute inset-0 -z-20 h-full w-full object-cover">
+  <div class="absolute inset-0 -z-10 bg-stone-950/70"></div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-stone-950 via-stone-950/70 to-stone-950/20"></div>
+  <div class="mx-auto flex min-h-[620px] max-w-7xl items-center px-4 py-20 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="mb-4 text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Welcome to Baithak Café</p>
+      <h1 class="font-display text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">Good Food, Great Coffee, <span class="text-amber-300">Better Moments.</span></h1>
+      <p class="mt-6 max-w-xl text-base leading-7 text-stone-200 sm:text-lg">A cozy café in the heart of Jaipur, serving freshly brewed coffee, delicious bites and a space made for great conversations.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="menu.html" class="rounded-full bg-amber-300 px-6 py-3 text-sm font-bold text-stone-950 transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-offset-2 focus:ring-offset-stone-950">View Menu</a>
+        <a href="contact.html" class="rounded-full border border-white/50 px-6 py-3 text-sm font-bold text-white transition hover:border-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white">Visit Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white px-4 py-20 dark:bg-stone-900 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="text-sm font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">Our Difference</p>
+      <h2 class="mt-2 font-display text-4xl font-bold">Why Choose Us?</h2>
+      <p class="mt-3 text-stone-600 dark:text-stone-400">More than just a café — we're a place for you.</p>
+    </div>
+    <div class="mt-12 flex flex-col gap-8 text-center md:flex-row md:items-stretch">
+      <article class="flex-1 rounded-2xl border border-stone-200 bg-stone-50 p-7 dark:border-stone-800 dark:bg-stone-950">
+        <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-amber-100 text-xl dark:bg-amber-950" aria-hidden="true">☕</div>
+        <h3 class="mt-4 font-bold">Premium Coffee</h3><p class="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-400">Expertly brewed, always fresh.</p>
+      </article>
+      <article class="flex-1 rounded-2xl border border-stone-200 bg-stone-50 p-7 dark:border-stone-800 dark:bg-stone-950">
+        <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-amber-100 text-xl dark:bg-amber-950" aria-hidden="true">🌿</div>
+        <h3 class="mt-4 font-bold">Fresh Ingredients</h3><p class="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-400">Tasty, thoughtful and locally inspired.</p>
+      </article>
+      <article class="flex-1 rounded-2xl border border-stone-200 bg-stone-50 p-7 dark:border-stone-800 dark:bg-stone-950">
+        <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-amber-100 text-xl dark:bg-amber-950" aria-hidden="true">✨</div>
+        <h3 class="mt-4 font-bold">Cozy Ambience</h3><p class="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-400">Perfect for work, study or chill.</p>
+      </article>
+      <article class="flex-1 rounded-2xl border border-stone-200 bg-stone-50 p-7 dark:border-stone-800 dark:bg-stone-950">
+        <div class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-amber-100 text-xl dark:bg-amber-950" aria-hidden="true">★</div>
+        <h3 class="mt-4 font-bold">Great Service</h3><p class="mt-2 text-sm leading-6 text-stone-600 dark:text-stone-400">Friendly staff, always here for you.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bg-stone-950 px-4 py-20 text-white sm:px-6 lg:px-8">
+  <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.6fr] lg:items-center">
+    <div>
+      <p class="text-sm font-bold uppercase tracking-widest text-amber-300">Our Menu</p>
+      <h2 class="mt-2 font-display text-4xl font-bold">Delicious Choices</h2>
+      <p class="mt-4 max-w-md leading-7 text-stone-400">From rich coffee to fresh bites, our menu is made to satisfy every craving.</p>
+      <a href="menu.html" class="mt-7 inline-flex rounded-full bg-amber-300 px-5 py-3 text-sm font-bold text-stone-950 transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-300">View Full Menu</a>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-3">
+      <article class="overflow-hidden rounded-2xl border border-stone-800 bg-stone-900">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=85" alt="Cappuccino with latte art" class="h-48 w-full object-cover">
+        <div class="p-4"><h3 class="font-bold">Cappuccino</h3><p class="mt-1 text-sm text-stone-400">Rich, smooth and classic.</p><p class="mt-3 font-bold text-amber-300">₹120</p></div>
+      </article>
+      <article class="overflow-hidden rounded-2xl border border-stone-800 bg-stone-900">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Chocolate cake slice on a plate" class="h-48 w-full object-cover">
+        <div class="p-4"><h3 class="font-bold">Chocolate Cake</h3><p class="mt-1 text-sm text-stone-400">Rich, moist and delicious.</p><p class="mt-3 font-bold text-amber-300">₹150</p></div>
+      </article>
+      <article class="overflow-hidden rounded-2xl border border-stone-800 bg-stone-900">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85" alt="Fresh vegetable sandwich" class="h-48 w-full object-cover">
+        <div class="p-4"><h3 class="font-bold">Club Sandwich</h3><p class="mt-1 text-sm text-stone-400">Fresh, hearty and filling.</p><p class="mt-3 font-bold text-amber-300">₹180</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="px-4 py-20 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="text-center"><p class="text-sm font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">A Glimpse</p><h2 class="mt-2 font-display text-4xl font-bold">Gallery</h2></div>
+    <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Fresh coffee with latte art" class="h-48 w-full rounded-2xl object-cover sm:h-56">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=85" alt="Cozy café seating area" class="h-48 w-full rounded-2xl object-cover sm:h-56">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Fresh café food on a table" class="h-48 w-full rounded-2xl object-cover sm:h-56">
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Golden croissant served on a plate" class="h-48 w-full rounded-2xl object-cover sm:h-56">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Chocolate dessert in the café" class="col-span-2 h-48 w-full rounded-2xl object-cover sm:col-span-1 sm:h-56">
+    </div>
+    <div class="mt-7 text-center"><a href="gallery.html" class="inline-flex rounded-full border border-stone-300 px-5 py-2.5 text-sm font-bold transition hover:border-amber-500 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 dark:border-stone-700 dark:hover:text-amber-300">View More</a></div>
+  </div>
+</section>
+
+<section class="bg-amber-50 px-4 py-20 dark:bg-stone-900 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-7xl">
+    <div class="text-center"><p class="text-sm font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">Real People. Real Experiences.</p><h2 class="mt-2 font-display text-4xl font-bold">What Our Customers Say</h2></div>
+    <div class="mt-10 grid gap-5 md:grid-cols-3">
+      <article class="rounded-2xl bg-white p-6 shadow-sm dark:bg-stone-950"><p class="text-sm leading-6 text-stone-600 dark:text-stone-400">“The best coffee in Jaipur! The ambience is so calming and the food is just amazing.”</p><p class="mt-5 font-bold">Priya Sharma</p><p class="mt-1 text-amber-600" aria-label="5 out of 5 stars">★★★★★</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-sm dark:bg-stone-950"><p class="text-sm leading-6 text-stone-600 dark:text-stone-400">“A perfect place to work and relax. Loved the service and the menu!”</p><p class="mt-5 font-bold">Amit Verma</p><p class="mt-1 text-amber-600" aria-label="5 out of 5 stars">★★★★★</p></article>
+      <article class="rounded-2xl bg-white p-6 shadow-sm dark:bg-stone-950"><p class="text-sm leading-6 text-stone-600 dark:text-stone-400">“Great food, great vibes, highly recommended!”</p><p class="mt-5 font-bold">Neha Singh</p><p class="mt-1 text-amber-600" aria-label="5 out of 5 stars">★★★★★</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="bg-stone-950 px-4 py-8 text-white sm:px-6 lg:px-8">
+  <div class="mx-auto flex max-w-7xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+    <div><p class="font-bold">Open Daily</p><p class="text-sm text-stone-400">8:00 AM – 11:00 PM · MI Road, Jaipur</p></div>
+    <a href="contact.html" class="rounded-full bg-amber-300 px-6 py-3 text-center text-sm font-bold text-stone-950 hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-300">Visit Us Today</a>
+  </div>
+</section>
+</main>
+  <footer class="border-t border-stone-800 bg-stone-950 text-stone-300">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
+    <div>
+      <div class="mb-3 flex items-center gap-3">
+        <span class="grid h-9 w-9 place-items-center rounded-full border border-amber-400/50 text-amber-300" aria-hidden="true">☕</span>
+        <span class="font-display text-lg font-bold text-white">The Brew Haven</span>
+      </div>
+      <p class="max-w-sm text-sm leading-6 text-stone-400">Good coffee, great food and even better company in the heart of Jaipur.</p>
+    </div>
+    <div>
+      <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Quick Links</h2>
+      <div class="grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
+        <a href="about.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
+        <a href="menu.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
+        <a href="gallery.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
+        <a href="contact.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+      </div>
+    </div>
+    <div>
+      <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Opening Hours</h2>
+      <p class="text-sm text-stone-400">Mon – Sun</p>
+      <p class="text-sm font-semibold text-white">8:00 AM – 11:00 PM</p>
+      <p class="mt-4 text-sm text-stone-400">MI Road, Jaipur, Rajasthan</p>
+    </div>
+  </div>
+  <div class="border-t border-stone-800 px-4 py-5 text-center text-xs text-stone-500">© 2026 The Brew Haven. Built with semantic HTML + Tailwind CSS.</div>
+</footer>
+</body>
+</html>
