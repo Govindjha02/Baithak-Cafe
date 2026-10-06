@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Learn the story, values and people behind Baithak Café in Jaipur.">
   <meta name="theme-color" content="#151515">
-   <link rel="icon" type="image/png" href="./assets/baithak-logo-white.png">
+
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
     tailwind.config = {
       darkMode: 'media',
@@ -25,262 +29,510 @@
     }
   </script>
 </head>
+
 <body class="min-w-0 bg-stone-50 font-sans text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-lg focus:bg-amber-300 focus:px-4 focus:py-2 focus:text-stone-950">Skip to content</a>
+
+  <a
+    href="#main-content"
+    class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-lg focus:bg-amber-300 focus:px-4 focus:py-2 focus:text-stone-950"
+  >
+    Skip to content
+  </a>
 
   <header class="sticky top-0 z-50 border-b border-stone-800/80 bg-stone-950/95 backdrop-blur">
-    <nav aria-label="Main navigation" class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-      <a href="index.html" class="flex items-center rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="Baithak Café home">
-        <img src="./assets/baithak-logo-white.png" alt="Baithak Café" class="h-14 w-auto max-w-[210px] object-contain sm:h-16" />
+    <nav
+      aria-label="Main navigation"
+      class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+    >
+
+      <a
+        href="index.html"
+        class="flex items-center rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+        aria-label="Baithak Café home"
+      >
+        <img
+          src="./assets/baithak-logo-white.png"
+          alt="Baithak Café"
+          class="h-14 w-auto max-w-[210px] object-contain sm:h-16"
+        />
       </a>
-      <div class="hidden items-center gap-7 text-sm font-medium md:flex">
-        <a href="index.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-        <a href="about.html" class="text-amber-300 transition hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-        <a href="menu.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-        <a href="gallery.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-        <a href="contact.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+
+      <div class="hidden items-center gap-7 text-sm font-medium md:flex lg:gap-8">
+        <a
+          href="index.html"
+          class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Home
+        </a>
+
+        <a
+          href="about.html"
+          class="text-amber-300 transition hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          aria-current="page"
+        >
+          About
+        </a>
+
+        <a
+          href="menu.html"
+          class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Menu
+        </a>
+
+        <a
+          href="gallery.html"
+          class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Gallery
+        </a>
+
+        <a
+          href="contact.html"
+          class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Contact
+        </a>
       </div>
-      <a href="contact.html#booking" class="rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950 shadow-lg transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-stone-950">Book a Table</a>
+
+      <a
+        href="contact.html#booking"
+        class="hidden rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950 shadow-lg transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-stone-950 md:inline-flex"
+      >
+        Book a Table
+      </a>
     </nav>
+
     <div class="border-t border-stone-800 md:hidden">
       <div class="mx-auto grid max-w-7xl grid-cols-5 px-2">
-        <a href="index.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-        <a href="about.html" class="py-3 text-center text-xs font-medium text-amber-300 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-        <a href="menu.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-        <a href="gallery.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-        <a href="contact.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+
+        <a
+          href="index.html"
+          class="py-3 text-center text-xs font-medium text-stone-300 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Home
+        </a>
+
+        <a
+          href="about.html"
+          class="py-3 text-center text-xs font-medium text-amber-300 transition hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          aria-current="page"
+        >
+          About
+        </a>
+
+        <a
+          href="menu.html"
+          class="py-3 text-center text-xs font-medium text-stone-300 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Menu
+        </a>
+
+        <a
+          href="gallery.html"
+          class="py-3 text-center text-xs font-medium text-stone-300 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Gallery
+        </a>
+
+        <a
+          href="contact.html"
+          class="py-3 text-center text-xs font-medium text-stone-300 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+        >
+          Contact
+        </a>
+
       </div>
     </div>
   </header>
 
   <main id="main-content">
+
     <section class="relative isolate overflow-hidden bg-stone-950">
-      <img src="./images/aboutpage1.jpg" alt="Warm and welcoming seating area inside Baithak Café" class="absolute inset-0 -z-20 h-full w-full object-cover">
+      <img
+        src="./images/aboutpage1.jpg"
+        alt="Warm and welcoming seating area inside Baithak Café"
+        class="absolute inset-0 -z-20 h-full w-full object-cover"
+      >
+
       <div class="absolute inset-0 -z-10 bg-stone-950/75"></div>
+
       <div class="mx-auto flex min-h-[500px] max-w-7xl items-center px-4 py-20 sm:px-6 lg:px-8">
         <div class="max-w-2xl">
-          <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">Our Story</p>
-          <h1 class="mt-4 font-display text-5xl font-bold leading-tight text-white sm:text-6xl">More Than Coffee. <span class="text-amber-300">A Place to Belong.</span></h1>
-          <p class="mt-6 max-w-xl text-base leading-7 text-stone-200 sm:text-lg">Baithak Café is a cozy Jaipur café built around three simple ideas: great coffee, honest food and better conversations.</p>
+
+          <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">
+            Our Story
+          </p>
+
+          <h1 class="mt-4 font-display text-5xl font-bold leading-tight text-white sm:text-6xl">
+            More Than Coffee.
+            <span class="text-amber-300">A Place to Belong.</span>
+          </h1>
+
+          <p class="mt-6 max-w-xl text-base leading-7 text-stone-200 sm:text-lg">
+            Baithak Café is a cozy Jaipur café built around three simple ideas:
+            great coffee, honest food and better conversations.
+          </p>
+
         </div>
       </div>
     </section>
 
     <section class="px-4 py-20 sm:px-6 lg:px-8">
       <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
+
         <div>
-          <p class="text-sm font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">Who We Are</p>
-          <h2 class="mt-3 font-display text-4xl font-bold">A little corner for coffee, conversations & comfort.</h2>
-          <p class="mt-6 leading-8 text-stone-600 dark:text-stone-400">Baithak Café is more than just a place for coffee — it’s a space to slow down, settle in and enjoy the moment.</p>
-          <p class="mt-4 leading-8 text-stone-600 dark:text-stone-400">From freshly brewed coffee and delicious café favourites to unhurried conversations with friends, we’ve created a warm and welcoming space where every visit feels a little like coming home.</p>
+          <p class="text-sm font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">
+            Who We Are
+          </p>
+
+          <h2 class="mt-3 font-display text-4xl font-bold">
+            A little corner for coffee, conversations & comfort.
+          </h2>
+
+          <p class="mt-6 leading-8 text-stone-600 dark:text-stone-400">
+            Baithak Café is more than just a place for coffee — it’s a space
+            to slow down, settle in and enjoy the moment.
+          </p>
+
+          <p class="mt-4 leading-8 text-stone-600 dark:text-stone-400">
+            From freshly brewed coffee and delicious café favourites to
+            unhurried conversations with friends, we’ve created a warm and
+            welcoming space where every visit feels a little like coming home.
+          </p>
         </div>
-        <img src="./images/aboutpage2.jpg" alt="Coffee and seating inside a warm café environment" class="h-[420px] w-full rounded-3xl object-cover shadow-xl">
+
+        <img
+          src="./images/aboutpage2.jpg"
+          alt="Coffee and seating inside a warm café environment"
+          class="h-[420px] w-full rounded-3xl object-cover shadow-xl"
+        >
+
       </div>
     </section>
 
     <section class="bg-stone-950 px-4 py-20 text-white sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
+
         <div class="mx-auto max-w-2xl text-center">
-          <p class="text-sm font-bold uppercase tracking-widest text-amber-300">What Matters To Us</p>
-          <h2 class="mt-3 font-display text-4xl font-bold">Our Values</h2>
+          <p class="text-sm font-bold uppercase tracking-widest text-amber-300">
+            What Matters To Us
+          </p>
+
+          <h2 class="mt-3 font-display text-4xl font-bold">
+            Our Values
+          </h2>
         </div>
+
         <div class="mt-12 grid gap-6 md:grid-cols-3">
-          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7">
-            <h3 class="mt-5 text-xl font-bold">Quality First</h3>
-            <p class="mt-3 text-sm leading-7 text-stone-400">We keep our menu focused so every cup and plate gets the attention it deserves.</p>
+
+          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7 transition duration-300 hover:-translate-y-1 hover:border-amber-500/40">
+            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-300 text-lg font-bold text-stone-950">
+              01
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold">
+              Quality First
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-stone-400">
+              We keep our menu focused so every cup and plate gets the
+              attention it deserves.
+            </p>
           </article>
-          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7">
-            <h3 class="mt-5 text-xl font-bold">People Matter</h3>
-            <p class="mt-3 text-sm leading-7 text-stone-400">Friendly service and a welcoming atmosphere are at the centre of every visit.</p>
+
+          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7 transition duration-300 hover:-translate-y-1 hover:border-amber-500/40">
+            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-300 text-lg font-bold text-stone-950">
+              02
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold">
+              People Matter
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-stone-400">
+              Friendly service and a welcoming atmosphere are at the centre
+              of every visit.
+            </p>
           </article>
-          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7">
-            <h3 class="mt-5 text-xl font-bold">Fresh & Thoughtful</h3>
-            <p class="mt-3 text-sm leading-7 text-stone-400">We choose simple ingredients and prepare food with care, freshness and consistency.</p>
+
+          <article class="rounded-2xl border border-stone-800 bg-stone-900 p-7 transition duration-300 hover:-translate-y-1 hover:border-amber-500/40">
+            <div class="flex h-11 w-11 items-center justify-center rounded-full bg-amber-300 text-lg font-bold text-stone-950">
+              03
+            </div>
+
+            <h3 class="mt-5 text-xl font-bold">
+              Fresh & Thoughtful
+            </h3>
+
+            <p class="mt-3 text-sm leading-7 text-stone-400">
+              We choose simple ingredients and prepare food with care,
+              freshness and consistency.
+            </p>
           </article>
+
         </div>
       </div>
     </section>
 
- <section class="px-4 py-20 sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-7xl">
+    <section class="px-4 py-20 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
 
-    <!-- Section Heading -->
-    <div class="mx-auto max-w-2xl text-center">
-      <p class="text-sm font-bold uppercase tracking-[0.2em] text-amber-700 dark:text-amber-300">
-        Meet The Team
-      </p>
-
-      <h2 class="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
-        The People Behind Your Baithak
-      </h2>
-
-      <p class="mt-4 text-sm leading-7 text-stone-600 dark:text-stone-400 sm:text-base">
-        The friendly faces, passionate baristas and wonderful people who make
-        every visit to Baithak Café feel special.
-      </p>
-    </div>
-
-    <!-- Team Cards -->
-    <div class="mt-12 grid gap-6 md:grid-cols-3">
-
-      <!-- Card 1 -->
-      <article
-        class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900"
-      >
-        <div class="relative overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
-            alt="Café team members working together"
-            class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
-          />
-
-          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
-
-          <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
-            Our Team
-          </span>
-        </div>
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold">
-            Our Café Team
-          </h3>
-
-          <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
-            A warm and friendly crew dedicated to making every visit
-            comfortable, welcoming and memorable.
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.2em] text-amber-700 dark:text-amber-300">
+            Meet The Team
           </p>
 
-          <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
-            <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
-            Always happy to serve
-          </div>
-        </div>
-      </article>
+          <h2 class="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
+            The People Behind Your Baithak
+          </h2>
 
-      <!-- Card 2 -->
-      <article
-        class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900"
-      >
-        <div class="relative overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85"
-            alt="Barista preparing freshly brewed coffee"
-            class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
-          />
-
-          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
-
-          <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
-            Coffee Lovers
-          </span>
-        </div>
-
-        <div class="p-6">
-          <h3 class="text-xl font-bold">
-            Our Baristas
-          </h3>
-
-          <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
-            Passionate about coffee and the little details that turn every
-            carefully brewed cup into a better experience.
+          <p class="mt-4 text-sm leading-7 text-stone-600 dark:text-stone-400 sm:text-base">
+            The friendly faces, passionate baristas and wonderful people who
+            make every visit to Baithak Café feel special.
           </p>
-
-          <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
-            <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
-            Brewing with passion
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article
-        class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900"
-      >
-        <div class="relative overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=85"
-            alt="Friends enjoying time together at a café"
-            class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
-          />
-
-          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
-
-          <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
-            Our Community
-          </span>
         </div>
 
-        <div class="p-6">
-          <h3 class="text-xl font-bold">
-            Our Community
-          </h3>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
 
-          <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
-            Guests, regulars and friends who bring life to Baithak Café and
-            make it feel like a place worth coming back to.
+          <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900">
+
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85"
+                alt="Café team members working together"
+                class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+              >
+
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
+
+              <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
+                Our Team
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">
+                Our Café Team
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
+                A warm and friendly crew dedicated to making every visit
+                comfortable, welcoming and memorable.
+              </p>
+
+              <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
+                <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
+                Always happy to serve
+              </div>
+            </div>
+
+          </article>
+
+          <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900">
+
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85"
+                alt="Barista preparing freshly brewed coffee"
+                class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+              >
+
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
+
+              <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
+                Coffee Lovers
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">
+                Our Baristas
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
+                Passionate about coffee and the little details that turn every
+                carefully brewed cup into a better experience.
+              </p>
+
+              <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
+                <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
+                Brewing with passion
+              </div>
+            </div>
+
+          </article>
+
+          <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-stone-900/10 dark:border-stone-800 dark:bg-stone-900">
+
+            <div class="relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=85"
+                alt="Friends enjoying time together at a café"
+                class="h-64 w-full object-cover transition duration-700 group-hover:scale-105"
+              >
+
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70"></div>
+
+              <span class="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-stone-900 backdrop-blur-sm">
+                Our Community
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="text-xl font-bold">
+                Our Community
+              </h3>
+
+              <p class="mt-3 text-sm leading-6 text-stone-600 dark:text-stone-400">
+                Guests, regulars and friends who bring life to Baithak Café
+                and make it feel like a place worth coming back to.
+              </p>
+
+              <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
+                <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
+                Made for togetherness
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+        <div class="mt-10 text-center">
+          <p class="text-sm text-stone-500 dark:text-stone-400">
+            Good coffee brings people together.
+            <span class="font-semibold text-amber-700 dark:text-amber-300">
+              Baithak makes them stay.
+            </span>
           </p>
-
-          <div class="mt-5 flex items-center gap-2 text-sm font-semibold text-amber-700 dark:text-amber-300">
-            <span class="h-1.5 w-1.5 rounded-full bg-amber-500"></span>
-            Made for togetherness
-          </div>
         </div>
-      </article>
 
-    </div>
-
-    <!-- Bottom Message -->
-    <div class="mt-10 text-center">
-      <p class="text-sm text-stone-500 dark:text-stone-400">
-        Good coffee brings people together. 
-        <span class="font-semibold text-amber-700 dark:text-amber-300">
-          Baithak makes them stay.
-        </span>
-      </p>
-    </div>
-
-  </div>
-</section>
+      </div>
+    </section>
 
     <section class="bg-amber-50 px-4 py-16 dark:bg-stone-900 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-4xl text-center">
-        <h2 class="font-display text-4xl font-bold">Come be part of our story.</h2>
-        <p class="mx-auto mt-4 max-w-2xl leading-7 text-stone-600 dark:text-stone-400">Drop by for your favourite coffee, discover something new from the menu, and stay for the good moments.</p>
+
+        <h2 class="font-display text-4xl font-bold">
+          Come be part of our story.
+        </h2>
+
+        <p class="mx-auto mt-4 max-w-2xl leading-7 text-stone-600 dark:text-stone-400">
+          Drop by for your favourite coffee, discover something new from the
+          menu, and stay for the good moments.
+        </p>
+
         <div class="mt-7 flex flex-wrap justify-center gap-3">
-          <a href="menu.html" class="rounded-full bg-stone-950 px-6 py-3 text-sm font-bold text-white transition hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-400 dark:bg-amber-300 dark:text-stone-950 dark:hover:bg-amber-200">Explore Menu</a>
-          <a href="contact.html#booking" class="rounded-full border border-stone-300 px-6 py-3 text-sm font-bold transition hover:border-amber-500 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 dark:border-stone-700 dark:hover:text-amber-300">Visit Us</a>
+
+          <a
+            href="menu.html"
+            class="rounded-full bg-stone-950 px-6 py-3 text-sm font-bold text-white transition hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-amber-400 dark:bg-amber-300 dark:text-stone-950 dark:hover:bg-amber-200"
+          >
+            Explore Menu
+          </a>
+
+          <a
+            href="contact.html#booking"
+            class="rounded-full border border-stone-300 px-6 py-3 text-sm font-bold transition hover:border-amber-500 hover:text-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-400 dark:border-stone-700 dark:hover:text-amber-300"
+          >
+            Visit Us
+          </a>
+
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="border-t border-stone-800 bg-stone-950 text-stone-300">
+
     <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
+
       <div>
         <div class="mb-3">
-          <img src="./assets/baithak-logo-white.png" alt="Baithak Café" class="h-12 w-auto max-w-[190px] object-contain" />
+          <img
+            src="./assets/baithak-logo-white.png"
+            alt="Baithak Café"
+            class="h-12 w-auto max-w-[190px] object-contain"
+          />
         </div>
-        <p class="max-w-sm text-sm leading-6 text-stone-400">Good coffee, great food and even better company in the heart of Jaipur.</p>
+
+        <p class="max-w-sm text-sm leading-6 text-stone-400">
+          Good coffee, great food and even better company in the heart of Jaipur.
+        </p>
       </div>
+
       <div>
-        <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Quick Links</h2>
+        <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+          Quick Links
+        </h2>
+
         <div class="grid grid-cols-2 gap-2 text-sm">
-          <a href="index.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-          <a href="about.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-          <a href="menu.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-          <a href="gallery.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-          <a href="contact.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+
+          <a
+            href="index.html"
+            class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            Home
+          </a>
+
+          <a
+            href="about.html"
+            class="text-amber-300 hover:text-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            About
+          </a>
+
+          <a
+            href="menu.html"
+            class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            Menu
+          </a>
+
+          <a
+            href="gallery.html"
+            class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="contact.html"
+            class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          >
+            Contact
+          </a>
+
         </div>
       </div>
+
       <div>
-        <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Opening Hours</h2>
-        <p class="text-sm text-stone-400">Mon – Sun</p>
-        <p class="text-sm font-semibold text-white">8:00 AM – 11:00 PM</p>
-        <p class="mt-4 text-sm text-stone-400">MI Road, Jaipur, Rajasthan</p>
+        <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">
+          Opening Hours
+        </h2>
+
+        <p class="text-sm text-stone-400">
+          Mon – Sun
+        </p>
+
+        <p class="text-sm font-semibold text-white">
+          8:00 AM – 11:00 PM
+        </p>
+
+        <p class="mt-4 text-sm text-stone-400">
+          MI Road, Jaipur, Rajasthan
+        </p>
       </div>
+
     </div>
-    <div class="border-t border-stone-800 px-4 py-5 text-center text-xs text-stone-500">© 2026 Baithak Café. Built with semantic HTML + Tailwind CSS.</div>
+
+    <div class="border-t border-stone-800 px-4 py-5 text-center text-xs text-stone-500">
+      © 2026 Baithak Café. Built with semantic HTML + Tailwind CSS.
+    </div>
+
   </footer>
+
 </body>
 </html>
