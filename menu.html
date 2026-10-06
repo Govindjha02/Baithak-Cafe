@@ -1,145 +1,527 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <title>Menu | The Brew Haven</title>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The Brew Haven — a cozy Jaipur café serving freshly brewed coffee, delicious food and good moments.">
-<meta name="theme-color" content="#151515">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Baithak Café</title>
+  <meta name="description" content="Explore the Baithak Café menu — freshly brewed coffee, refreshing drinks, delicious snacks and sweet treats in Jaipur.">
+  <meta name="theme-color" content="#151515">
+ <link rel="icon" type="image/png" href="./assets/baithak-logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
-
   <script>
-tailwind.config = {
-  darkMode: 'media',
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-        display: ['Playfair Display', 'Georgia', 'serif']
+    tailwind.config = {
+      darkMode: 'media',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            display: ['Playfair Display', 'Georgia', 'serif']
+          }
+        }
       }
     }
-  }
-}
-</script>
-
+  </script>
 </head>
+
 <body class="min-w-0 bg-stone-50 font-sans text-stone-900 antialiased dark:bg-stone-950 dark:text-stone-100">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-lg focus:bg-amber-300 focus:px-4 focus:py-2 focus:text-stone-950">Skip to content</a>
-  <header class="sticky top-0 z-50 border-b border-stone-800/80 bg-stone-950/95 backdrop-blur">
+
+<a href="#main-content"
+   class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-lg focus:bg-amber-300 focus:px-4 focus:py-2 focus:text-stone-950">
+  Skip to content
+</a>
+
+
+<header class="sticky top-0 z-50 border-b border-stone-800/80 bg-stone-950/95 backdrop-blur">
   <nav aria-label="Main navigation" class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-    <a href="index.html" class="flex items-center gap-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400" aria-label="The Brew Haven home">
-      <span class="grid h-10 w-10 place-items-center rounded-full border border-amber-400/60 text-xl text-amber-300" aria-hidden="true">☕</span>
-      <span>
-        <span class="block font-display text-base font-bold text-white">The Brew Haven</span>
-        <span class="hidden text-[10px] text-stone-400 sm:block">Café · Coffee · Good Vibes</span>
-      </span>
+
+    <a href="index.html"
+       class="flex items-center rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
+       aria-label="Baithak Café home">
+      <img src="./assets/baithak-logo-white.png" alt="Baithak Café" class="h-14 w-auto max-w-[210px] object-contain sm:h-16"
+      >
     </a>
+
     <div class="hidden items-center gap-7 text-sm font-medium md:flex">
-      <a href="index.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-      <a href="about.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-      <a href="menu.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-      <a href="gallery.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-      <a href="contact.html" class="text-stone-200 transition hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+      <a href="index.html" class="text-stone-200 transition hover:text-amber-300">Home</a>
+      <a href="about.html" class="text-stone-200 transition hover:text-amber-300">About</a>
+      <a href="menu.html" class="text-amber-300 transition hover:text-amber-200">Menu</a>
+      <a href="gallery.html" class="text-stone-200 transition hover:text-amber-300">Gallery</a>
+      <a href="contact.html" class="text-stone-200 transition hover:text-amber-300">Contact</a>
     </div>
-    <a href="contact.html#booking" class="rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950 shadow-lg shadow-amber-950/20 transition hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-stone-950">Book a Table</a>
+
+    <a href="contact.html#booking"
+       class="rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950 shadow-lg shadow-amber-950/20 transition hover:bg-amber-200">
+      Book a Table
+    </a>
   </nav>
+
   <div class="border-t border-stone-800 md:hidden">
     <div class="mx-auto grid max-w-7xl grid-cols-5 px-2">
-      <a href="index.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-      <a href="about.html" class="py-3 text-center text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-      <a href="menu.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-      <a href="gallery.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-      <a href="contact.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+      <a href="index.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300">Home</a>
+      <a href="about.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300">About</a>
+      <a href="menu.html" class="py-3 text-center text-xs font-medium text-amber-300">Menu</a>
+      <a href="gallery.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300">Gallery</a>
+      <a href="contact.html" class="py-3 text-center text-xs font-medium text-stone-300 hover:text-amber-300">Contact</a>
     </div>
   </div>
 </header>
-  <main id="main-content">
-<section class="relative overflow-hidden bg-stone-950 px-4 py-20 text-white sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-7xl text-center">
-    <p class="text-sm font-bold uppercase tracking-widest text-amber-300">Fresh Ingredients. Great Taste.</p>
-    <h1 class="mt-3 font-display text-5xl font-bold">Our Menu</h1>
-    <p class="mx-auto mt-4 max-w-xl text-stone-400">Simple favourites, carefully prepared and served fresh throughout the day.</p>
+
+<main id="main-content">
+
+\
+<section class="relative overflow-hidden bg-stone-950 px-4 py-24 text-white sm:px-6 lg:px-8">
+  <div class="absolute -left-24 top-10 h-64 w-64 rounded-full bg-amber-300/10 blur-3xl"></div>
+  <div class="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-amber-500/10 blur-3xl"></div>
+
+  <div class="relative mx-auto max-w-4xl text-center">
+    <p class="text-sm font-bold uppercase tracking-[0.3em] text-amber-300">
+      Fresh Ingredients · Great Taste
+    </p>
+
+    <h1 class="mt-5 font-display text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+      Our Menu
+    </h1>
+
+    <p class="mx-auto mt-6 max-w-2xl text-base leading-7 text-stone-400 sm:text-lg">
+      From your first cup of coffee to your last sweet bite,
+      discover comforting favourites made for every Baithak.
+    </p>
+
+    <div class="mx-auto mt-8 h-px w-24 bg-amber-300"></div>
   </div>
 </section>
-<section class="px-4 py-16 sm:px-6 lg:px-8">
+
+<section class="px-4 py-20 sm:px-6 lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <div class="mb-10 flex flex-wrap gap-2" aria-label="Menu categories">
-      <span class="rounded-full bg-amber-300 px-4 py-2 text-xs font-bold text-stone-950">All</span>
-      <span class="rounded-full border border-stone-300 px-4 py-2 text-xs font-semibold dark:border-stone-700">Coffee</span>
-      <span class="rounded-full border border-stone-300 px-4 py-2 text-xs font-semibold dark:border-stone-700">Tea</span>
-      <span class="rounded-full border border-stone-300 px-4 py-2 text-xs font-semibold dark:border-stone-700">Snacks</span>
-      <span class="rounded-full border border-stone-300 px-4 py-2 text-xs font-semibold dark:border-stone-700">Main Course</span>
-      <span class="rounded-full border border-stone-300 px-4 py-2 text-xs font-semibold dark:border-stone-700">Desserts</span>
+
+  
+    <div class="mb-12 flex flex-wrap justify-center gap-3" aria-label="Menu categories">
+      <span class="rounded-full bg-amber-300 px-5 py-2.5 text-sm font-bold text-stone-950">All</span>
+      <span class="rounded-full border border-stone-300 px-5 py-2.5 text-sm font-semibold transition hover:border-amber-400 hover:text-amber-700 dark:border-stone-700 dark:hover:text-amber-300">Coffee</span>
+      <span class="rounded-full border border-stone-300 px-5 py-2.5 text-sm font-semibold transition hover:border-amber-400 hover:text-amber-700 dark:border-stone-700 dark:hover:text-amber-300">Tea</span>
+      <span class="rounded-full border border-stone-300 px-5 py-2.5 text-sm font-semibold transition hover:border-amber-400 hover:text-amber-700 dark:border-stone-700 dark:hover:text-amber-300">Snacks</span>
+      <span class="rounded-full border border-stone-300 px-5 py-2.5 text-sm font-semibold transition hover:border-amber-400 hover:text-amber-700 dark:border-stone-700 dark:hover:text-amber-300">Main Course</span>
+      <span class="rounded-full border border-stone-300 px-5 py-2.5 text-sm font-semibold transition hover:border-amber-400 hover:text-amber-700 dark:border-stone-700 dark:hover:text-amber-300">Desserts</span>
     </div>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Espresso served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Espresso</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹100</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Rich and bold</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=85" alt="Americano served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Americano</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹110</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Smooth and classic</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=900&q=85" alt="Latte served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Latte</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹140</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Creamy and velvety</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Cappuccino served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Cappuccino</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹120</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Perfectly balanced</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=900&q=85" alt="Masala Chai served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Masala Chai</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹80</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Traditional and flavourful</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Iced Coffee served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Iced Coffee</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹130</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Chilled and refreshing</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85" alt="Veg Sandwich served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Veg Sandwich</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹180</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Fresh and hearty</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Chocolate Cake served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Chocolate Cake</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹150</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Rich and indulgent</p></div>
-</article><article class="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900">
-<img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Croissant served at The Brew Haven" class="h-48 w-full object-cover">
-<div class="p-5"><div class="flex items-start justify-between gap-3"><h3 class="font-bold">Croissant</h3><span class="font-bold text-amber-700 dark:text-amber-300">₹130</span></div><p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Buttery and flaky</p></div>
-</article></div>
-  </div>
-</section>
-<section class="bg-stone-950 px-4 py-16 text-white sm:px-6 lg:px-8">
-  <div class="mx-auto max-w-5xl text-center">
-    <h2 class="font-display text-3xl font-bold">Something for every mood.</h2>
-    <p class="mx-auto mt-3 max-w-2xl text-stone-400">Come for a quick coffee, stay for a meal, or make it your favourite work spot.</p>
-    <a href="contact.html#booking" class="mt-7 inline-flex rounded-full bg-amber-300 px-6 py-3 text-sm font-bold text-stone-950 hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-300">Book a Table</a>
-  </div>
-</section>
-</main>
-  <footer class="border-t border-stone-800 bg-stone-950 text-stone-300">
-  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
-    <div>
-      <div class="mb-3 flex items-center gap-3">
-        <span class="grid h-9 w-9 place-items-center rounded-full border border-amber-400/50 text-amber-300" aria-hidden="true">☕</span>
-        <span class="font-display text-lg font-bold text-white">The Brew Haven</span>
+
+  
+    <div class="mb-14 grid overflow-hidden rounded-[2rem] bg-stone-950 text-white shadow-2xl lg:grid-cols-2">
+
+      <div class="relative min-h-[360px] overflow-hidden">
+      
+        <img
+          src="./images/specialmenu.jpg"
+          alt="Featured Baithak Café special"
+          class="h-full min-h-[360px] w-full object-cover transition duration-700 hover:scale-105"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent"></div>
+
+        <span class="absolute left-6 top-6 rounded-full bg-amber-300 px-4 py-2 text-xs font-bold uppercase tracking-wider text-stone-950">
+          Baithak Special
+        </span>
       </div>
-      <p class="max-w-sm text-sm leading-6 text-stone-400">Good coffee, great food and even better company in the heart of Jaipur.</p>
+
+      <div class="flex flex-col justify-center p-8 sm:p-12 lg:p-14">
+        <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">
+          Featured Favourite
+        </p>
+
+        <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+          Your Perfect Baithak
+        </h2>
+
+        <p class="mt-5 max-w-xl leading-7 text-stone-400">
+          A little coffee, something delicious and plenty of time to sit,
+          talk and enjoy the moment.
+        </p>
+
+        <div class="mt-8 flex items-center gap-4">
+          <span class="h-px w-12 bg-amber-300"></span>
+          <span class="text-sm font-semibold text-stone-300">Sip · Sit · Stay</span>
+        </div>
+      </div>
     </div>
+
+    <div class="mb-8">
+      <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-700 dark:text-amber-300">
+        Freshly Brewed
+      </p>
+      <h2 class="mt-2 font-display text-4xl font-bold sm:text-5xl">
+        Coffee & Chai
+      </h2>
+      <p class="mt-3 max-w-2xl text-stone-600 dark:text-stone-400">
+        Warm cups, rich flavours and the kind of coffee that makes you want to stay a little longer.
+      </p>
+    </div>
+
+    <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+       
+          <img src="./images/menu1.jpg" alt="Espresso" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Coffee</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Espresso</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Rich and bold</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹100</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu2.jpg" alt="Americano" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Coffee</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Americano</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Smooth and classic</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹110</span>
+          </div>
+        </div>
+      </article>
+
+    
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu3.jpg" alt="Latte" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Coffee</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Latte</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Creamy and velvety</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹140</span>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu4.jpg" alt="Cappuccino" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Coffee</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Cappuccino</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Perfectly balanced</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹120</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu5.jpg" alt="Masala Chai" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Tea</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Masala Chai</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Traditional and flavourful</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹80</span>
+          </div>
+        </div>
+      </article>
+
+  
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu6.jpg" alt="Iced Coffee" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-stone-950/70 to-transparent"></div>
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Cold</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Iced Coffee</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Chilled and refreshing</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹130</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+    <div class="mb-8 mt-20">
+      <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-700 dark:text-amber-300">
+        Made Fresh
+      </p>
+      <h2 class="mt-2 font-display text-4xl font-bold sm:text-5xl">
+        Bites & Favourites
+      </h2>
+      <p class="mt-3 max-w-2xl text-stone-600 dark:text-stone-400">
+        Easy-going café favourites for quick bites, long conversations and everything in between.
+      </p>
+    </div>
+
+    <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+   
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu7.jpg" alt="Veg Sandwich" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Snacks</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Veg Sandwich</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Fresh, hearty and filling</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹180</span>
+          </div>
+        </div>
+      </article>
+
+     
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu8.jpg" alt="Creamy Pasta" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Main Course</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Creamy Pasta</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Comforting and creamy</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹220</span>
+          </div>
+        </div>
+      </article>
+
+  
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu9.jpg" alt="Veg Pizza" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Main Course</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Veg Pizza</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Cheesy and loaded</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹240</span>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu10.jpg" alt="Crispy French Fries" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Snacks</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Crispy Fries</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Golden and crispy</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹140</span>
+          </div>
+        </div>
+      </article>
+
+  
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu11.jpg" alt="Garlic Bread" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Snacks</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Garlic Bread</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Buttery and aromatic</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹150</span>
+          </div>
+        </div>
+      </article>
+
+   
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu12.jpg" alt="Masala Maggi" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Favourites</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Masala Maggi</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Simple, spicy and comforting</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹120</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+   
+    <div class="mb-8 mt-20">
+      <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-700 dark:text-amber-300">
+        Sweet Moments
+      </p>
+      <h2 class="mt-2 font-display text-4xl font-bold sm:text-5xl">
+        Desserts
+      </h2>
+      <p class="mt-3 max-w-2xl text-stone-600 dark:text-stone-400">
+        Finish your Baithak on a sweet note.
+      </p>
+    </div>
+
+    <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+
+  
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu13.jpg" alt="Chocolate Cake" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Dessert</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Chocolate Cake</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Rich and indulgent</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹150</span>
+          </div>
+        </div>
+      </article>
+
+      
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu14.jpg" alt="Croissant" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Dessert</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Croissant</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Buttery and flaky</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹130</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:border-stone-800 dark:bg-stone-900">
+        <div class="relative h-64 overflow-hidden">
+          <img src="./images/menu15.jpg" alt="Chocolate Brownie" class="h-full w-full object-cover transition duration-500 group-hover:scale-110">
+          <span class="absolute left-4 top-4 rounded-full bg-stone-950/80 px-3 py-1 text-xs font-bold text-amber-300">Dessert</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="font-display text-2xl font-bold">Chocolate Brownie</h3>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Fudgy and chocolatey</p>
+            </div>
+            <span class="rounded-full bg-amber-300 px-3 py-1 text-sm font-bold text-stone-950">₹140</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-stone-950 px-4 py-20 text-white sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-5xl text-center">
+    <p class="text-sm font-bold uppercase tracking-[0.25em] text-amber-300">
+      Made for your Baithak
+    </p>
+
+    <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">
+      Come hungry. Leave happy.
+    </h2>
+
+    <p class="mx-auto mt-4 max-w-2xl leading-7 text-stone-400">
+      Come for a quick coffee, stay for a meal, or make Baithak your favourite
+      place to work, relax and catch up.
+    </p>
+
+    <a href="contact.html#booking"
+       class="mt-8 inline-flex rounded-full bg-amber-300 px-7 py-3.5 text-sm font-bold text-stone-950 transition hover:bg-amber-200">
+      Book a Table
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-stone-800 bg-stone-950 text-stone-300">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
+
+    <div>
+      <div class="mb-4">
+        <img
+          src="./assets/baithak-logo-white.png"
+          alt="Baithak Café"
+          class="h-12 w-auto max-w-[190px] object-contain"
+        >
+      </div>
+
+      <p class="max-w-sm text-sm leading-6 text-stone-400">
+        Good coffee, great food and even better company in the heart of Jaipur.
+      </p>
+    </div>
+
     <div>
       <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Quick Links</h2>
       <div class="grid grid-cols-2 gap-2 text-sm">
-        <a href="index.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Home</a>
-        <a href="about.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">About</a>
-        <a href="menu.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Menu</a>
-        <a href="gallery.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Gallery</a>
-        <a href="contact.html" class="hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400">Contact</a>
+        <a href="index.html" class="hover:text-amber-300">Home</a>
+        <a href="about.html" class="hover:text-amber-300">About</a>
+        <a href="menu.html" class="hover:text-amber-300">Menu</a>
+        <a href="gallery.html" class="hover:text-amber-300">Gallery</a>
+        <a href="contact.html" class="hover:text-amber-300">Contact</a>
       </div>
     </div>
+
     <div>
       <h2 class="mb-3 text-sm font-bold uppercase tracking-wider text-white">Opening Hours</h2>
       <p class="text-sm text-stone-400">Mon – Sun</p>
       <p class="text-sm font-semibold text-white">8:00 AM – 11:00 PM</p>
       <p class="mt-4 text-sm text-stone-400">MI Road, Jaipur, Rajasthan</p>
     </div>
+
   </div>
-  <div class="border-t border-stone-800 px-4 py-5 text-center text-xs text-stone-500">© 2026 The Brew Haven. Built with semantic HTML + Tailwind CSS.</div>
+
+  <div class="border-t border-stone-800 px-4 py-5 text-center text-xs text-stone-500">
+    © 2026 Baithak Café. Built with semantic HTML + Tailwind CSS.
+  </div>
 </footer>
+
 </body>
 </html>
